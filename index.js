@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import OpenAI from "openai";
-import { benchmarks } from "./benchmark";
+import { benchmarks } from "./benchmark.js";
 
 dotenv.config();
 console.log("API Key starts with:", process.env.OPENAI_API_KEY?.slice(0, 10));
